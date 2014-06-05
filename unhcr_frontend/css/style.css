@@ -50,7 +50,9 @@
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
+  font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -82,7 +84,9 @@
   border: 2px solid #fff;
   border-radius: 4px;
   color: #fff;
+  font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .region-navigation .nav > li > a:hover,
