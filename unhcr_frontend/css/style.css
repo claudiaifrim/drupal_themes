@@ -1,0 +1,103 @@
+#header {
+  background-color: #242424;
+  padding-top: 40px;
+}
+
+#header .logo {
+  margin-right: 20px;
+}
+
+#header .logo:hover,
+#header .logo:focus {
+  text-decoration: none;
+}
+
+#header .logo img {
+  vertical-align: text-bottom;
+}
+
+#filters {
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+#filters a {
+  color: #999;
+  display: block;
+  font-weight: bold;
+}
+
+#filters a:hover,
+#filters a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar {
+  background-color: transparent;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #999;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #222;
+}
+
+.region-navigation .nav {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.region-navigation .nav > li {
+  display: table-cell;
+  text-align: center;
+  width: 1%;
+}
+
+.region-navigation .nav > li > a {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.region-navigation .nav > li > a:hover,
+.region-navigation .nav > li > a:focus {
+  background-color: transparent;
+  color: #999;
+}
+
+.region-navigation .nav > li + li {
+  padding-left: 20px;
+}
+
+.region-navigation .nav > li.active > a,
+.region-navigation .nav > li.active > a:hover,
+.region-navigation .nav > li.active > a:focus {
+  color: #242424;
+  background-color: #fff;
+}
