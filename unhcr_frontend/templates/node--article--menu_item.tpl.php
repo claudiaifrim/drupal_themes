@@ -19,4 +19,5 @@
     print render($content);
     ?>
   </div>
+  <a href="#" class="pull-right"><span class="glyphicon glyphicon-plus"></span></a>
 </div>
