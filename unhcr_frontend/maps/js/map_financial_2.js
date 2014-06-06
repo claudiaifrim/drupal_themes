@@ -95,7 +95,7 @@ var fbudget_balloons = [
 
 var fbudget_map;
 AmCharts.ready(function() {
-    fbudget_map = AmCharts.makeChart("fbudget_map", {
+    fbudget_map = AmCharts.makeChart("chartdiv", {
         "type": "serial",
         "theme": "unhcr",
         "legend": {
