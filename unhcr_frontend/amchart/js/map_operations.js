@@ -117,8 +117,8 @@ var continentsDataProvider = {
 
 
 
-
-var map = AmCharts.makeChart("chartdiv", {
+AmCharts.ready(function(){
+  var map = AmCharts.makeChart("chartdiv", {
     type: "map",
     "theme": "none",
     pathToImages: "http://www.amcharts.com/lib/3/images/",
@@ -131,37 +131,39 @@ var map = AmCharts.makeChart("chartdiv", {
     },
 
     dataProvider: continentsDataProvider
+  });
+
+  map.zoomControl.zoomControlEnabled = false;
+  map.zoomControl.panControlEnabled = false;
+
+  function handleGoHome() {
+      map.dataProvider = continentsDataProvider;
+      map.validateNow();
+  }
+
+  function handleMapObjectClick(event) {
+      if (event.mapObject.id == "backButton") {
+          handleGoHome();
+          return;
+      }
+
+      var group = event.mapObject.groupId;
+      var all = document.getElementsByClassName("mapgroup");
+
+      for (var i = 0; i < all.length; i++){
+        all[i].style.display = "none";
+      }
+
+
+      if (group){
+          document.getElementById("group" + group).style.display = "block";
+
+      }
+
+  }
+
+  // monitor when home icon was clicked and also go to continents map
+  map.addListener("homeButtonClicked", handleGoHome);
+  map.addListener("clickMapObject", handleMapObjectClick);
 });
 
-map.zoomControl.zoomControlEnabled = false;
-map.zoomControl.panControlEnabled = false;
-
-function handleGoHome() {
-    map.dataProvider = continentsDataProvider;
-    map.validateNow();
-}
-
-function handleMapObjectClick(event) {
-    if (event.mapObject.id == "backButton") {
-        handleGoHome();
-        return;
-    }
-
-    var group = event.mapObject.groupId;
-    var all = document.getElementsByClassName("mapgroup");
-
-    for (var i = 0; i < all.length; i++){
-      all[i].style.display = "none";
-    }
-
-
-    if (group){
-        document.getElementById("group" + group).style.display = "block";
-
-    }
-
-}
-
-// monitor when home icon was clicked and also go to continents map
-map.addListener("homeButtonClicked", handleGoHome);
-map.addListener("clickMapObject", handleMapObjectClick);
