@@ -121,3 +121,11 @@
   color: #242424;
   background-color: #fff;
 }
+
+#footer {
+  background-color: #242424;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
