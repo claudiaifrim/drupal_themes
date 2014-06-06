@@ -11,7 +11,7 @@
 
   print render($content['field_image']);
   ?>
-  <h3><a href="<?php print $node_url; ?>"><?php print $node->title; ?></a></h3>
+  <em class="lead text-danger"><?php print $node->title; ?></em>
   <div class="content"<?php print $content_attributes; ?>>
     <?php
     hide($content['field_image']);
