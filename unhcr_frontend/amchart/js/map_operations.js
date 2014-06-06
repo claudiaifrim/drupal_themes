@@ -117,7 +117,7 @@ var continentsDataProvider = {
 
 
 
-AmCharts.ready(function(){
+jQuery(document).ready(function(){
   var map = AmCharts.makeChart("chartdiv", {
     type: "map",
     "theme": "none",
