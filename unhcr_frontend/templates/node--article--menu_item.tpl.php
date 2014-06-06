@@ -19,7 +19,8 @@
     print render($content);
     ?>
   </div>
-  <button type="button" class="btn btn-default pull-right" onclick="jQuery('#mini-panel-financial_information_content').append('<iframe src="/node/get/ajax/<?php print $node->nid; ?>"></iframe>');">
+  <button type="button" class="btn btn-default pull-right"
+          onclick="jQuery('#mini-panel-financial_information_content').append('<iframe src=\'/node/get/ajax/<?php print $node->nid; ?>\'></iframe>');">
     <span class="glyphicon glyphicon-plus"></span>
   </button>
 </div>
