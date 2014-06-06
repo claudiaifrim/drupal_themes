@@ -19,5 +19,7 @@
     print render($content);
     ?>
   </div>
-  <a href="#" class="pull-right"><span class="glyphicon glyphicon-plus"></span></a>
+  <button type="button" class="btn btn-default btn-lg pull-right">
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
 </div>
