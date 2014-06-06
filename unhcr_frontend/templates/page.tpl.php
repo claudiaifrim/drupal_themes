@@ -107,6 +107,13 @@
 </div>
 <footer id="footer">
   <div class="container">
-    <?php print render($page['footer']); ?>
-  </div>
-</footer>
+    <div class="row">
+      <div class="col-md-8">
+        <?php print render($page['footer']); ?>
+      </div><!-- .col-md-8 -->
+      <div class="col-md-4">
+        <?php print render($page['footer_right']); ?>
+      </div><!-- .col-md-8 -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+</footer><!-- #footer -->
