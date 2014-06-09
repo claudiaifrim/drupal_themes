@@ -19,7 +19,11 @@
     print render($content);
     ?>
   </div>
-  <button type="button" class="btn btn-default pull-right" onclick="jQuery('#mini-panel-financial_information_content').load('/node/get/ajax/<?php print $node->nid; ?>');">
+  <button type="button" class="btn btn-default pull-right" onclick="
+      jQuery('#mini-panel-financial_information_content').load('/node/get/ajax/<?php print $node->nid; ?>',function(){
+            jQuery(this).slideDown();
+      });
+  ">
     <span class="glyphicon glyphicon-plus"></span>
   </button>
 </div>

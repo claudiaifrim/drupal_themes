@@ -137,6 +137,10 @@
   color: #999;
 }
 
+#mini-panel-financial_information_content {
+    display: none;
+}
+
 iframe.map {
     border: 0;
 }
