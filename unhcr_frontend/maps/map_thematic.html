@@ -2,7 +2,9 @@
   <head>
   <title>Map</title>
     <link rel="stylesheet" href="css/map.css" />
-
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="lib/ammap.js"></script>
     <script type="text/javascript" src="lib/continentsLow.js"></script>
     <script type="text/javascript" src="lib/worldLow.js"></script>
@@ -10,45 +12,49 @@
     <script type="text/javascript" src="js/map_thematic.js"></script>
   </head>
   <body>
-    <div id="chartdiv"></div>
-    <div id="heatmaplegend">
-      <div id="legendTitle"></div>
-      <div id="legendContent">
-        <span>40%</span>
-        <span class="heatslice" id="heat1"></span>
-        <span class="heatslice" id="heat2"></span>
-        <span class="heatslice" id="heat3"></span>
-        <span class="heatslice" id="heat4"></span>
-        <span class="heatslice" id="heat5"></span>
-        <span>165%</span>
+  <div class="container">
+        <div id="chartdiv"></div>
+        <div id="heatmaplegend">
+          <div id="legendTitle"></div>
+          <div id="legendContent">
+            <span>40%</span>
+            <span class="heatslice" id="heat1"></span>
+            <span class="heatslice" id="heat2"></span>
+            <span class="heatslice" id="heat3"></span>
+            <span class="heatslice" id="heat4"></span>
+            <span class="heatslice" id="heat5"></span>
+            <span>165%</span>
+          </div>
+        </div>
+        <div id="mapfilterselector">
+          <ul class="filterlist">
+            <li><a id="filter1" href="#" onclick="javascript:setMapFilter(this, highlightedWorld1)">School enrollment</a></li>
+            <li><a id="filter2" href="#" onclick="javascript:setMapFilter(this, highlightedWorld2)">Children out of school</a></li>
+            <li><a id="filter3" href="#" onclick="javascript:setMapFilter(this, highlightedWorld3)">Expenditure per student</a></li>
+          </ul>
+        </div>
+      <div class="row">
+        <div class="mapgroup col-md-12" id="group1">
+            <h3>Planning figures</h3>
+            <img class="img-responsive" src="content/thematic_education.jpg"/>
+        </div>
+        <div class="mapgroup col-md-12" id="group2">
+            <h3>Planning figures</h3>
+            <img class="img-responsive" src="content/thematic_education.jpg"/>
+        </div>
+        <div class="mapgroup col-md-12" id="group3">
+            <h3>Planning figures</h3>
+            <img class="img-responsive" src="content/thematic_education.jpg"/>
+        </div>
+        <div class="mapgroup col-md-12" id="group4">
+            <h3>Planning figures</h3>
+            <img class="img-responsive" src="content/thematic_education.jpg"/>
+        </div>
+        <div class="mapgroup col-md-12" id="group5">
+            <h3>Planning figures</h3>
+            <img class="img-responsive" src="content/thematic_education.jpg"/>
+        </div>
       </div>
-    </div>
-    <div id="mapfilterselector">
-      <ul class="filterlist">
-        <li><a id="filter1" href="#" onclick="javascript:setMapFilter(this, highlightedWorld1)">School enrollment</a></li>
-        <li><a id="filter2" href="#" onclick="javascript:setMapFilter(this, highlightedWorld2)">Children out of school</a></li>
-        <li><a id="filter3" href="#" onclick="javascript:setMapFilter(this, highlightedWorld3)">Expenditure per student</a></li>
-      </ul>
-    </div>
-    <div class="mapgroup" id="group1">
-      <h1>Location 1</h1>
-      <p>Group 1 data</p>
-    </div>
-    <div class="mapgroup" id="group2">
-      <h1>Location 2</h1>
-      <p>Group 2 data</p>
-    </div>
-    <div class="mapgroup" id="group3">
-      <h1>Location 3</h1>
-      <p>Group 3 data</p>
-    </div>
-    <div class="mapgroup" id="group4">
-      <h1>Location 4</h1>
-      <p>Group 4 data</p>
-    </div>
-    <div class="mapgroup" id="group5">
-      <h1>Location 5</h1>
-      <p>Group 5 data</p>
-    </div>
+  </div>
   </body>
 </html>

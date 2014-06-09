@@ -157,7 +157,9 @@ function handleMapObjectClick(event) {
 
     if (group){
         document.getElementById("group" + group).style.display = "block";
-
+        $('html, body').animate({
+            scrollTop: $("#group" + group).offset().top
+        }, 1000);
     }
 
 }

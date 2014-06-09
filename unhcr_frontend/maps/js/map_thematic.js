@@ -108,7 +108,9 @@ function handleLocationClicked(location){
 
     if (group){
         document.getElementById("group" + group).style.display = "block";
-        window.scrollTo(document.getElementById("group" + group).getBoundingClientRect().top,0);
+        $('html, body').animate({
+            scrollTop: $("#group" + group).offset().top
+        }, 1000);
     }
 
 }
