@@ -2,7 +2,9 @@
   <head>
   <title>Map</title>
     <link rel="stylesheet" href="css/map.css" />
-
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="lib/ammap.js"></script>
     <script type="text/javascript" src="lib/continentsLow.js"></script>
     <script type="text/javascript" src="lib/worldLow.js"></script>
@@ -10,22 +12,26 @@
     <script type="text/javascript" src="js/map_operations.js"></script>
   </head>
   <body>
-    <div id="chartdiv"></div>
-    <div class="mapgroup" id="group1">
-      <h1>Mouseover group 1</h1>
-      <p>Group 1 data</p>
-    </div>
-    <div class="mapgroup" id="group2">
-      <h1>Mouseover group 2</h1>
-      <p>Group 2 data</p>
-    </div>
-    <div class="mapgroup" id="group3">
-      <h1>Mouseover group 3</h1>
-      <p>Group 3 data</p>
-    </div>
-    <div class="mapgroup" id="group4">
-      <h1>Mouseover group 4</h1>
-      <p>Group 4 data</p>
+    <div class="container">
+        <div id="chartdiv"></div>
+        <div class="mapgroup row" id="group1">
+            <h3>Overview</h3>
+            <p><img src="content/operations_map.jpg" class="img-responsive"/></p>
+            <div class="col-md-6">
+                <h3>Highlights</h3>
+                <img src="content/operations_table.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-md-6">
+                <h3>Financial Information</h3>
+                <img src="content/operations_graph.jpg" class="img-responsive"/>
+            </div>
+        </div>
+        <div class="mapgroup" id="group2">
+        </div>
+        <div class="mapgroup" id="group3">
+        </div>
+        <div class="mapgroup" id="group4">
+        </div>
     </div>
   </body>
 </html>

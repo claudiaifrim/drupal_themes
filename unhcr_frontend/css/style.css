@@ -140,3 +140,18 @@
 .hide-element {
   display: none;
 }
+
+iframe.map {
+    border: 0;
+}
+
+.carousel-map .carousel-inner {
+    width: 95%;
+    margin:0 auto;
+}
+
+.carousel-map .carousel-control {
+    background: none;
+    width: auto;
+    color: #ccc;
+}
