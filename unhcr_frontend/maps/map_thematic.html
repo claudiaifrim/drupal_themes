@@ -1,0 +1,54 @@
+<html>
+  <head>
+  <title>Map</title>
+    <link rel="stylesheet" href="css/map.css" />
+
+    <script type="text/javascript" src="lib/ammap.js"></script>
+    <script type="text/javascript" src="lib/continentsLow.js"></script>
+    <script type="text/javascript" src="lib/worldLow.js"></script>
+    <script type="text/javascript" src="lib/none.js"></script>
+    <script type="text/javascript" src="js/map_thematic.js"></script>
+  </head>
+  <body>
+    <div id="chartdiv"></div>
+    <div id="heatmaplegend">
+      <div id="legendTitle"></div>
+      <div id="legendContent">
+        <span>40%</span>
+        <span class="heatslice" id="heat1"></span>
+        <span class="heatslice" id="heat2"></span>
+        <span class="heatslice" id="heat3"></span>
+        <span class="heatslice" id="heat4"></span>
+        <span class="heatslice" id="heat5"></span>
+        <span>165%</span>
+      </div>
+    </div>
+    <div id="mapfilterselector">
+      <ul class="filterlist">
+        <li><a id="filter1" href="#" onclick="javascript:setMapFilter(this, highlightedWorld1)">School enrollment</a></li>
+        <li><a id="filter2" href="#" onclick="javascript:setMapFilter(this, highlightedWorld2)">Children out of school</a></li>
+        <li><a id="filter3" href="#" onclick="javascript:setMapFilter(this, highlightedWorld3)">Expenditure per student</a></li>
+      </ul>
+    </div>
+    <div class="mapgroup" id="group1">
+      <h1>Location 1</h1>
+      <p>Group 1 data</p>
+    </div>
+    <div class="mapgroup" id="group2">
+      <h1>Location 2</h1>
+      <p>Group 2 data</p>
+    </div>
+    <div class="mapgroup" id="group3">
+      <h1>Location 3</h1>
+      <p>Group 3 data</p>
+    </div>
+    <div class="mapgroup" id="group4">
+      <h1>Location 4</h1>
+      <p>Group 4 data</p>
+    </div>
+    <div class="mapgroup" id="group5">
+      <h1>Location 5</h1>
+      <p>Group 5 data</p>
+    </div>
+  </body>
+</html>
