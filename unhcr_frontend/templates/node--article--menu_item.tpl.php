@@ -22,18 +22,25 @@
     <button type="button" class="btn btn-default pull-right" onclick="
         jQuery('#mini-panel-financial_information_content').load('/node/get/ajax/<?php print $node->nid; ?>', function(){
             jQuery(this).slideDown();
-            var offset = jQuery(this).offset();
-            jQuery('html, body').animate({
-              scrollTop: offset.top
-            }, 1000);
         });
-        jQuery(this).hide().siblings('button').show();
+
+        var offset = jQuery(this).offset();
+        jQuery('html, body').animate({
+            scrollTop: offset.top
+        }, 1000);
+
+        jQuery('button > span.glyphicon.glyphicon-plus').parent().removeClass('hide-element');
+        jQuery('button > span.glyphicon.glyphicon-minus').parent().addClass('hide-element');
+        jQuery(this).next('.hide-element').removeClass('hide-element');
+        jQuery(this).addClass('hide-element');
     ">
         <span class="glyphicon glyphicon-plus"></span>
     </button>
     <button type="button" class="btn btn-default pull-right hide-element" onclick="
         jQuery('#mini-panel-financial_information_content').slideUp();
-        jQuery(this).hide().siblings('button').show();
+        jQuery('button > span.glyphicon.glyphicon-plus').parent().removeClass('hide-element');
+        jQuery(this).addClass('hide-element');
+
         var offset = jQuery(this).closest('.node').offset();
         jQuery('html, body').animate({
               scrollTop: offset.top
