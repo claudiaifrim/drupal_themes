@@ -136,3 +136,7 @@
   background-color: transparent;
   color: #999;
 }
+
+.hide-element {
+  display: none;
+}
