@@ -108,6 +108,7 @@ function handleLocationClicked(location){
 
     if (group){
         document.getElementById("group" + group).style.display = "block";
+        window.scrollTo(document.getElementById("group" + group).getBoundingClientRect().top,0);
     }
 
 }

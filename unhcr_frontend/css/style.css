@@ -136,3 +136,7 @@
   background-color: transparent;
   color: #999;
 }
+
+iframe.map {
+    border: 0;
+}
